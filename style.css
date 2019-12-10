@@ -1,0 +1,325 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Roboto:400,400i,700,900&display=swap');
+</style>
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main__date {
+	font-size: 1em;
+	color: #9B9B9B;
+}
+
+.main__title {
+	font-weight: 900px;
+	font-size: 1.75em;
+}
+
+.main__description {
+	font-size: 1em;
+	color: #867B7B;
+}
+
+.main__button--continue {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 65px;
+}
+
+.header {
+	background:  url(img/bg.png) 0 0 no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 300%;
+}
+
+.header__inner {
+	width: 90%;
+	color: #fff;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 2.2em;
+	margin-top: 70px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+.logo p {
+	border: 2px solid #fff;
+	border-radius: 20%;
+	padding: 5px;
+}
+
+.nav {
+	margin-top: 70px;
+	width: 490px;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.list__item {
+	list-style-type: none;
+	font-size: 1em;
+	font-weight: 900;
+}
+
+.list__item a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.list__item a:hover {
+	color: #000;
+	background: #fff;
+	margin: -10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.subtitle {
+	margin-top: 5%;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+
+.title {
+	margin-top: -2%;
+	font-size: 3.6em;
+	color: #fff;
+	text-align: center;
+}
+
+.main__wrapper {
+	margin: 0 auto;
+	width: 73%;
+	/* border:3px solid green; */
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.main {
+	/* border: 3px solid red; */
+	width: 65%;
+}
+
+.main__picture {
+	width: 100%;
+}
+
+.aside {
+	/* border: 3px solid blue; */
+	border-left: 3px solid rgb(189, 188, 188);
+	width: 30%;
+	padding: 5px;
+}
+
+#search-form {
+	position: relative;
+    width: 100%;
+}
+
+#search-form input {
+	width: 100%;
+	height: 57px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+	outline: none;
+	color: #9E9C9C;
+	font-style: italic;
+	font-size: 1em;
+}
+#search-form button {
+	position: absolute; 
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 57px;
+	border: none;
+  	cursor: pointer;
+}
+#search-form button:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	font-size: 16px;
+}
+
+.menu__category {
+	/* border: 2px solid yellow; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.category__item {
+	margin-top: 40px;
+	list-style-type: none;
+	white-space: pre;
+}
+
+.menu__category a {
+	text-decoration: none;
+	color: #857E7E;
+	font-size: 1em;
+	margin-left: -40px;
+}
+
+.menu__category a:hover {
+	color: #fff;
+	background: #4E4747;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.new_zapisi {
+	display: flex;
+	justify-content: space-between;
+	width: 320px;
+}
+
+.zapisi-img {
+	width: 80px;
+	height: 80px;
+}
+
+.red_text {
+	font-size: 1.25em;
+	color: red;
+	margin-top: -5px;
+	margin-left: 20px;
+}
+
+.red_text a {
+	text-decoration: none;
+	color: #000;
+}
+
+.red_text a:hover {
+	color: red;
+}
+
+
+.Marg {
+	margin-left: 20px;
+}
+
+p span {
+	border:1px solid grey;
+	padding: 5px;
+	white-space: pre-wrap;
+
+}
+
+span a {
+	text-decoration: none;
+	color: #000;
+}
+
+span a:hover {
+	color: #B3ACAC;
+}
+
+span a:hover {
+	color: #B3ACAC;
+}
+
+
+.reklama {
+	padding-top: 110px;
+	font-size: 0.9em;
+	color: #D7D5D5;
+	text-align: center;
+}
+
+.reklama_title {
+	padding-top: 25px;
+	font-size: 1.5em;
+	color: #D7D5D5;
+	text-align: center;
+}
+
+.reklama_section {
+	margin-top: 50px;
+	width: 400px;
+	height: 400px;
+	background: url(img/rekl.png);
+	background-size: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+	.logo {
+		display: none;
+	}
+
+	.nav {
+		margin-top: 10px;
+		border: 2px solid white;
+		width: 900px;
+	}
+
+	.nav__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li a:hover {
+		margin: -5px;
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	.Monst {
+		font-size: 0.75rem;
+	}
+
+	.Rob {
+		font-size: 0.75rem;
+	}
+
+	.title_mini {
+		margin-top: 0%;
+		font-size: 1.5rem;
+	}
+
+	.title_main {
+		margin-top: 0%;
+		font-size: 1.5rem;
+	}
+	
+	.menu_item {
+		margin-top: 20px;
+	}
+	
+
+
+	.menu_2 a {
+		font-size: 0.75rem;
+	}
+
+	.main__wrapper {
+		width: 100%;
+		margin-top:0px;
+	}
+
+
+
+
+}
