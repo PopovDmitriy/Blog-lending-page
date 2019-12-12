@@ -124,10 +124,13 @@
 }
 
 .aside {
-	/* border: 3px solid blue; */
-	border-left: 3px solid rgb(189, 188, 188);
+	border-left: 2px solid rgb(189, 188, 188);
 	width: 30%;
 	padding: 5px;
+}
+
+.menu {
+	max-width: 490px;
 }
 
 #search-form {
@@ -138,7 +141,6 @@
 #search-form input {
 	width: 100%;
 	height: 57px;
-	padding-left: 10px;
 	border: 1px solid #ddd;
 	outline: none;
 	color: #9E9C9C;
@@ -156,13 +158,12 @@
 }
 #search-form button:before {
 	content: "\f002";
-	font-family: FontAwesome;
+	/* font-family: FontAwesome; */
 	font-size: 16px;
 }
 
 .menu__category {
 	/* border: 2px solid yellow; */
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -170,7 +171,7 @@
 }
 
 .category__item {
-	margin-top: 40px;
+	margin-top: 30px;
 	list-style-type: none;
 	white-space: pre;
 }
@@ -192,7 +193,7 @@
 .new_zapisi {
 	display: flex;
 	justify-content: space-between;
-	width: 320px;
+	max-width: 320px;
 }
 
 .zapisi-img {
@@ -258,7 +259,7 @@ span a:hover {
 
 .reklama_section {
 	margin-top: 50px;
-	width: 400px;
+	max-width: 561px;
 	height: 400px;
 	background: url(img/rekl.png);
 	background-size: 100%;
@@ -271,7 +272,6 @@ span a:hover {
 
 	.nav {
 		margin-top: 10px;
-		border: 2px solid white;
 		width: 900px;
 	}
 
